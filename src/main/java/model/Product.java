@@ -6,14 +6,12 @@ public class Product {
     private String name;
     private float capacity;
     private float mass;
-    private int storageShelf;
 
-    public Product(int barcode, String name, float capacity, float mass, int storageShelf) {
+    public Product(int barcode, String name, float capacity, float mass) {
         this.barcode = barcode;
         this.name = name;
         this.capacity = capacity;
         this.mass = mass;
-        this.storageShelf = storageShelf;
     }
 
     public int getId() {
@@ -56,13 +54,6 @@ public class Product {
         this.mass = mass;
     }
 
-    public int getStorageShelf() {
-        return storageShelf;
-    }
-
-    public void setStorageShelf(int storageShelf) {
-        this.storageShelf = storageShelf;
-    }
 
     @Override
     public String toString() {
@@ -72,7 +63,6 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", capacity=" + capacity +
                 ", mass=" + mass +
-                ", storageShelf=" + storageShelf +
                 '}';
     }
 }
