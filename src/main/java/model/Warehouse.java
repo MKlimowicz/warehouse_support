@@ -5,6 +5,9 @@ import java.util.List;
 
 public class Warehouse {
 
+    private int id;
+    private String name;
+
     private List<ProductShelf> shelvesInTheCompany;
     private List<Employee> employeeList;
     private List<Product> productList;
@@ -51,5 +54,16 @@ public class Warehouse {
     public void printShelvesInTheCompany(){
         shelvesInTheCompany
                 .forEach(System.out::println);
+    }
+
+    public int getId() {
+        return id;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -5,12 +5,12 @@ import java.util.List;
 
 public class ProductShelf {
    private int id;
-   private int numer;
+   private int number;
    private List<Employee> responsibleEmployees;
    private List<Product> storageShelf;
 
-    public ProductShelf(int numer) {
-        this.numer = numer;
+    public ProductShelf(int number) {
+        this.number = number;
         this.responsibleEmployees = new ArrayList<Employee>();
         this.storageShelf = new ArrayList<Product>();
     }
@@ -19,16 +19,12 @@ public class ProductShelf {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getNumber() {
+        return number;
     }
 
-    public int getNumer() {
-        return numer;
-    }
-
-    public void setNumer(int numer) {
-        this.numer = numer;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public List<Employee> getResponsibleEmployees() {
@@ -51,7 +47,7 @@ public class ProductShelf {
     public String toString() {
         return "ProductShelf{" +
                 "id=" + id +
-                ", numer=" + numer +
+                ", number=" + number +
                 ", responsibleEmployees=" + responsibleEmployees +
                 ", storageShelf=" + storageShelf +
                 '}';
