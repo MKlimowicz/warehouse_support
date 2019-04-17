@@ -12,7 +12,7 @@ public class Dbutil {
 
     private Dbutil() throws PropertyVetoException {
         this.connectionPool.setDriverClass("com.mysql.jdbc.Driver");
-        this.connectionPool.setJdbcUrl("jdbc:mysql://localhost:3306/biblioteka");
+        this.connectionPool.setJdbcUrl("jdbc:mysql://localhost:3306/warehouse_support");
         this.connectionPool.setUser("root");
         this.connectionPool.setPassword("Server123");
         this.connectionPool.setInitialPoolSize(5);
