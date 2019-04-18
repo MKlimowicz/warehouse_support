@@ -12,10 +12,11 @@ public class Warehouse {
     private List<Employee> employeeList;
     private List<Product> productList;
 
-    public Warehouse() {
+    public Warehouse(String name) {
         this.shelvesInTheCompany = new ArrayList<ProductShelf>();
         this.employeeList = new ArrayList<Employee>();
         this.productList = new ArrayList<Product>();
+        this.name = name;
     }
 
     public List<ProductShelf> getShelvesInTheCompany() {
@@ -63,7 +64,22 @@ public class Warehouse {
         return name;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Warehouse{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", shelvesInTheCompany=" + shelvesInTheCompany +
+                ", employeeList=" + employeeList +
+                ", productList=" + productList +
+                '}';
     }
 }

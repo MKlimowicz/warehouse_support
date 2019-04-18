@@ -18,7 +18,8 @@ public class EmployeeUI {
             System.out.println("1.Creating an employee");
             System.out.println("2.Print all employees from all warehouses");
             System.out.println("3.Update employee");
-            System.out.println("4.EXIT");
+            System.out.println("4.Delete employee");
+            System.out.println("5.EXIT");
             choose = sc.nextInt();
 
             switch (choose){

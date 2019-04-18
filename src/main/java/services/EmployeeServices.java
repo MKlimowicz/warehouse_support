@@ -99,7 +99,11 @@ public class EmployeeServices {
 
         decision = queriesEmployee.deleteEmployeeById(id);
 
-
+        if(decision){
+            System.out.println("You delete data. Employee id: " + id );
+        }else {
+            System.out.println("An error occurred while delete data");
+        }
 
 
     }

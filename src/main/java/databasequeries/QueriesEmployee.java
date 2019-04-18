@@ -22,7 +22,6 @@ public class QueriesEmployee {
                     Connection con = Dbutil.getInstance().getConnection();
                     PreparedStatement preparedStatement = con.prepareStatement(sqlQuery)
             ) {
-
                 preparedStatement.setString(1, employee.getName());
                 preparedStatement.setString(2, employee.getLastName());
                 amountSaveEmployee = preparedStatement.executeUpdate();
